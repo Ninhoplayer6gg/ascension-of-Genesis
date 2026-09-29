@@ -66,6 +66,20 @@ allprojects {
             content { includeGroup 'com.jamieswhiteshirt' }
         }
 
+        // Forge Config API Port (Palladium dependency)
+        maven {
+            name = 'Fuzs Mod Resources'
+            url = 'https://raw.githubusercontent.com/Fuzss/modresources/main/maven/'
+            content { includeGroup 'fuzs.forgeconfigapiport' }
+        }
+
+        // Modrinth maven (Sodium and other compat deps pulled in by Palladium)
+        maven {
+            name = 'Modrinth'
+            url = 'https://api.modrinth.com/maven'
+            content { includeGroup 'maven.modrinth' }
+        }
+
         mavenCentral()
     }
 
