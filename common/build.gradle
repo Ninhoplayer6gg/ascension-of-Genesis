@@ -10,7 +10,10 @@ dependencies {
     // Fabric loader is used only for the @Environment annotations and mixin deps.
     // Do NOT use other classes from fabric loader in common code.
     modImplementation "net.fabricmc:fabric-loader:${rootProject.fabric_loader_version}"
-    modApi "net.threetag:palladium-common:${rootProject.palladium_version}"
+    modApi("net.threetag:palladium-common:${rootProject.palladium_version}") {
+        // KubeJS is an optional Palladium integration and is not on any declared repo
+        exclude group: "dev.latvian.mods"
+    }
 }
 
 publishing {

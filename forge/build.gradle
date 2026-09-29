@@ -41,6 +41,8 @@ dependencies {
     forge "net.minecraftforge:forge:${rootProject.forge_version}"
     modApi("net.threetag:palladium-forge:${rootProject.palladium_version}") {
         exclude group: "software.bernie.geckolib"
+        // KubeJS is an optional Palladium integration and is not on any declared repo
+        exclude group: "dev.latvian.mods"
     }
 
     implementation(annotationProcessor("io.github.llamalad7:mixinextras-common:0.2.0"))

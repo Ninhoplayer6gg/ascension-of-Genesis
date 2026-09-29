@@ -58,6 +58,7 @@ allprojects {
         maven { name = 'Ladysnake Mods'; url = 'https://maven.ladysnake.org/releases' }
 
         // Porting Lib
+        maven { url = "https://mvn.devos.one/releases/" }
         maven { url = "https://mvn.devos.one/snapshots/" }
 
         // Reach Entity Attributes

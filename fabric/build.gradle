@@ -30,6 +30,8 @@ dependencies {
     modApi "net.fabricmc.fabric-api:fabric-api:${rootProject.fabric_api_version}"
     modApi("net.threetag:palladium-fabric:${rootProject.palladium_version}") {
         exclude group: "software.bernie.geckolib"
+        // KubeJS is an optional Palladium integration and is not on any declared repo
+        exclude group: "dev.latvian.mods"
     }
 
     implementation(annotationProcessor("io.github.llamalad7:mixinextras-common:0.2.0"))
