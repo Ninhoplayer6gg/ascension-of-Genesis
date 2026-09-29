@@ -74,6 +74,13 @@ allprojects {
             content { includeGroup 'fuzs.forgeconfigapiport' }
         }
 
+        // JEI (Forge compat dependency of Palladium)
+        maven {
+            name = 'BlameJared'
+            url = 'https://maven.blamejared.com/'
+            content { includeGroup 'mezz.jei' }
+        }
+
         // Modrinth maven (Sodium and other compat deps pulled in by Palladium)
         maven {
             name = 'Modrinth'
