@@ -1,0 +1,53 @@
+{
+  "name": "Genesis Atlas",
+  "description": "Super-strength and durability granted by the Genesis Atlas serum.",
+  "icon": {
+    "type": "palladium:item",
+    "item": "projectgenesis:genesis_atlas_serum"
+  },
+  "abilities": [
+    {
+      "ability": "projectgenesis:enhanced_strength",
+      "properties": {
+        "damage_bonus": 4.0
+      }
+    },
+    {
+      "ability": "projectgenesis:enhanced_durability",
+      "properties": {
+        "armor_bonus": 6.0,
+        "knockback_resistance": 0.4
+      }
+    },
+    {
+      "ability": "projectgenesis:power_jump",
+      "properties": {
+        "upward_velocity": 1.6,
+        "energy_cost": 15.0,
+        "instability_gain": 8.0,
+        "cooldown_ticks": 60
+      }
+    },
+    {
+      "ability": "projectgenesis:ground_impact",
+      "properties": {
+        "radius": 5.0,
+        "damage": 8.0,
+        "knockback": 1.2,
+        "energy_cost": 30.0,
+        "instability_gain": 20.0,
+        "cooldown_ticks": 120
+      }
+    },
+    {
+      "ability": "projectgenesis:atlas_titan_state",
+      "properties": {
+        "duration_ticks": 200,
+        "energy_cost": 40.0,
+        "instability_gain": 45.0,
+        "cooldown_ticks": 1200,
+        "required_stage": 4
+      }
+    }
+  ]
+}

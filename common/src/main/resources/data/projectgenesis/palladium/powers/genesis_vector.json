@@ -1,0 +1,49 @@
+{
+  "name": "Genesis Vector",
+  "description": "Telekinesis and force fields granted by the Genesis Vector serum.",
+  "icon": {
+    "type": "palladium:item",
+    "item": "projectgenesis:genesis_vector_serum"
+  },
+  "abilities": [
+    {
+      "ability": "projectgenesis:telekinetic_push",
+      "properties": {
+        "range": 16.0,
+        "force": 2.5,
+        "energy_cost": 14.0,
+        "instability_gain": 7.0,
+        "cooldown_ticks": 45
+      }
+    },
+    {
+      "ability": "projectgenesis:telekinetic_pull",
+      "properties": {
+        "range": 16.0,
+        "force": 2.0,
+        "energy_cost": 14.0,
+        "instability_gain": 7.0,
+        "cooldown_ticks": 45
+      }
+    },
+    {
+      "ability": "projectgenesis:force_field",
+      "properties": {
+        "energy_per_second": 8.0,
+        "refresh_ticks": 40
+      }
+    },
+    {
+      "ability": "projectgenesis:vector_burst",
+      "properties": {
+        "radius": 10.0,
+        "damage": 12.0,
+        "launch": 2.0,
+        "energy_cost": 50.0,
+        "instability_gain": 50.0,
+        "cooldown_ticks": 1200,
+        "required_stage": 4
+      }
+    }
+  ]
+}

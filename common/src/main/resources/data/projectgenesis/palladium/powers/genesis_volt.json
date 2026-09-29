@@ -1,0 +1,57 @@
+{
+  "name": "Genesis Volt",
+  "description": "Speed and electricity granted by the Genesis Volt serum.",
+  "icon": {
+    "type": "palladium:item",
+    "item": "projectgenesis:genesis_volt_serum"
+  },
+  "abilities": [
+    {
+      "ability": "projectgenesis:enhanced_speed",
+      "properties": {
+        "speed_multiplier": 0.6
+      }
+    },
+    {
+      "ability": "projectgenesis:electric_discharge",
+      "properties": {
+        "range": 12.0,
+        "damage": 6.0,
+        "energy_cost": 12.0,
+        "instability_gain": 6.0,
+        "cooldown_ticks": 40
+      }
+    },
+    {
+      "ability": "projectgenesis:electric_dash",
+      "properties": {
+        "dash_velocity": 3.0,
+        "energy_cost": 10.0,
+        "instability_gain": 5.0,
+        "cooldown_ticks": 30
+      }
+    },
+    {
+      "ability": "projectgenesis:chain_lightning",
+      "properties": {
+        "range": 14.0,
+        "jump_range": 8.0,
+        "max_targets": 5,
+        "damage": 7.0,
+        "energy_cost": 25.0,
+        "instability_gain": 15.0,
+        "cooldown_ticks": 100
+      }
+    },
+    {
+      "ability": "projectgenesis:volt_overcharge",
+      "properties": {
+        "duration_ticks": 200,
+        "energy_cost": 40.0,
+        "instability_gain": 45.0,
+        "cooldown_ticks": 1200,
+        "required_stage": 4
+      }
+    }
+  ]
+}

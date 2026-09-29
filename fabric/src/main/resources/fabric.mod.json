@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "projectgenesis",
+  "version": "${version}",
+  "name": "PROJECT GENESIS",
+  "description": "Original-superhero powers mod powered by the Palladium framework.",
+  "authors": ["Genesis Dynamics Dev"],
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["com.genesisdynamics.projectgenesis.fabric.ProjectGenesisFabric"],
+    "client": ["com.genesisdynamics.projectgenesis.fabric.client.ProjectGenesisFabricClient"]
+  },
+  "mixins": ["projectgenesis.mixins.json", "projectgenesis-common.mixins.json"],
+  "accessWidener": "projectgenesis.accesswidener",
+  "depends": {
+    "minecraft": "~1.20.1",
+    "fabricloader": ">=0.15.0",
+    "fabric-api": "*",
+    "palladium": ">=4.5"
+  }
+}

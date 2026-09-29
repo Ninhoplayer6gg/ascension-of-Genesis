@@ -1,0 +1,49 @@
+{
+  "name": "Genesis Helios",
+  "description": "Flight and solar energy granted by the Genesis Helios serum.",
+  "icon": {
+    "type": "palladium:item",
+    "item": "projectgenesis:genesis_helios_serum"
+  },
+  "abilities": [
+    {
+      "ability": "projectgenesis:helios_flight",
+      "properties": {
+        "heat_per_second": 4.0,
+        "max_heat": 100.0
+      }
+    },
+    {
+      "ability": "projectgenesis:energy_blast",
+      "properties": {
+        "range": 32.0,
+        "damage": 10.0,
+        "heat_gain": 20.0,
+        "energy_cost": 18.0,
+        "instability_gain": 10.0,
+        "cooldown_ticks": 50
+      }
+    },
+    {
+      "ability": "projectgenesis:heat_burst",
+      "properties": {
+        "radius": 7.0,
+        "damage": 5.0,
+        "fire_seconds": 4,
+        "energy_cost": 28.0,
+        "instability_gain": 18.0,
+        "cooldown_ticks": 140
+      }
+    },
+    {
+      "ability": "projectgenesis:helios_overdrive",
+      "properties": {
+        "duration_ticks": 200,
+        "energy_cost": 40.0,
+        "instability_gain": 45.0,
+        "cooldown_ticks": 1200,
+        "required_stage": 4
+      }
+    }
+  ]
+}

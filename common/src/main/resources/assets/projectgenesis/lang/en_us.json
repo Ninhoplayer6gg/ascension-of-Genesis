@@ -1,0 +1,22 @@
+{
+  "itemGroup.projectgenesis": "PROJECT GENESIS",
+
+  "item.projectgenesis.genesis_atlas_serum": "Genesis Atlas Serum",
+  "item.projectgenesis.genesis_volt_serum": "Genesis Volt Serum",
+  "item.projectgenesis.genesis_helios_serum": "Genesis Helios Serum",
+  "item.projectgenesis.genesis_vector_serum": "Genesis Vector Serum",
+  "item.projectgenesis.serum.tooltip.atlas": "Grants super-strength and durability.",
+  "item.projectgenesis.serum.tooltip.volt": "Grants speed and electricity.",
+  "item.projectgenesis.serum.tooltip.helios": "Grants flight and solar energy.",
+  "item.projectgenesis.serum.tooltip.vector": "Grants telekinesis and force fields.",
+  "item.projectgenesis.serum.already_powered": "Your organism has already bonded with a Genesis serum.",
+  "item.projectgenesis.serum.awakened": "The %s serum awakens within you...",
+
+  "key.categories.projectgenesis": "PROJECT GENESIS",
+  "key.projectgenesis.ability_1": "Genesis Ability 1",
+  "key.projectgenesis.ability_2": "Genesis Ability 2",
+  "key.projectgenesis.ability_3": "Genesis Ability 3",
+  "key.projectgenesis.ability_4": "Genesis Ability 4",
+  "key.projectgenesis.ultimate": "Genesis Ultimate",
+  "key.projectgenesis.ability_wheel": "Genesis Ability Wheel"
+}

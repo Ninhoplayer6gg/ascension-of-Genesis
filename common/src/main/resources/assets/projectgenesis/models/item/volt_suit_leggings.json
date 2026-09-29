@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "projectgenesis:item/volt_suit_leggings"
+  }
+}
