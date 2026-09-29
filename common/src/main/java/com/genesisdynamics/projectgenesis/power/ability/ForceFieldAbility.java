@@ -5,6 +5,7 @@ import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.LivingEntity;
 import net.threetag.palladium.power.IPowerHolder;
 import net.threetag.palladium.power.ability.AbilityInstance;
+import net.threetag.palladium.util.property.FloatProperty;
 import net.threetag.palladium.util.property.IntegerProperty;
 import net.threetag.palladium.util.property.PalladiumProperty;
 

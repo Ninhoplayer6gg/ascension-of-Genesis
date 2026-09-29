@@ -56,7 +56,7 @@ public final class StabilityManager {
     }
 
     private static CompoundTag getTag(LivingEntity entity) {
-        CompoundTag root = entity.getPersistentData();
+        CompoundTag root = GenesisDataHolder.get(entity);
         if (!root.contains(NBT_KEY)) {
             root.put(NBT_KEY, new CompoundTag());
         }

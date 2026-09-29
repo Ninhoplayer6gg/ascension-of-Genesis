@@ -25,8 +25,7 @@ public class HasStabilityCondition extends Condition {
 
     @Override
     public boolean active(DataContext context) {
-        LivingEntity entity = context.getEntity();
-        if (entity == null) {
+        if (!(context.getEntity() instanceof LivingEntity entity)) {
             return false;
         }
         return StabilityManager.getInstability(entity) <= maxInstability;

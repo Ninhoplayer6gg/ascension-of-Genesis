@@ -1,5 +1,6 @@
 package com.genesisdynamics.projectgenesis.power.ability;
 
+import com.genesisdynamics.projectgenesis.player.GenesisDataHolder;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvents;
@@ -43,8 +44,8 @@ public class EnergyBlastAbility extends GenesisAbility {
             return;
         }
         // Add to Helios heat pool as well.
-        float heat = entity.getPersistentData().getFloat("GenesisHeliosHeat");
-        entity.getPersistentData().putFloat("GenesisHeliosHeat", heat + entry.getProperty(HEAT_GAIN));
+        float heat = GenesisDataHolder.get(entity).getFloat("GenesisHeliosHeat");
+        GenesisDataHolder.get(entity).putFloat("GenesisHeliosHeat", heat + entry.getProperty(HEAT_GAIN));
 
         Vec3 start = entity.getEyePosition();
         Vec3 look = entity.getLookAngle();

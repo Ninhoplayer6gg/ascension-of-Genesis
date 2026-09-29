@@ -1,5 +1,6 @@
 package com.genesisdynamics.projectgenesis.power.ability;
 
+import com.genesisdynamics.projectgenesis.player.GenesisDataHolder;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.threetag.palladium.power.IPowerHolder;
@@ -47,7 +48,7 @@ public class HeliosFlightAbility extends GenesisAbility {
         if (!(entity instanceof Player player) || entity.level().isClientSide) {
             return;
         }
-        float heat = entity.getPersistentData().getFloat(NBT_HEAT);
+        float heat = GenesisDataHolder.get(entity).getFloat(NBT_HEAT);
         float maxHeat = entry.getProperty(MAX_HEAT);
 
         if (enabled && player.getAbilities().flying) {
@@ -62,7 +63,7 @@ public class HeliosFlightAbility extends GenesisAbility {
             // Cool down when not actively flying.
             heat = Math.max(0f, heat - (entry.getProperty(HEAT_PER_SECOND) * 1.5f) / 20f);
         }
-        entity.getPersistentData().putFloat(NBT_HEAT, heat);
+        GenesisDataHolder.get(entity).putFloat(NBT_HEAT, heat);
     }
 
     @Override

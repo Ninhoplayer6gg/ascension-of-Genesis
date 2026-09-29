@@ -1,5 +1,6 @@
 package com.genesisdynamics.projectgenesis.progression;
 
+import com.genesisdynamics.projectgenesis.player.GenesisDataHolder;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.world.entity.LivingEntity;
 
@@ -68,11 +69,11 @@ public final class PowerProgressionManager {
     }
 
     public static void reset(LivingEntity entity) {
-        entity.getPersistentData().remove(NBT_KEY);
+        GenesisDataHolder.get(entity).remove(NBT_KEY);
     }
 
     private static CompoundTag getTag(LivingEntity entity) {
-        CompoundTag root = entity.getPersistentData();
+        CompoundTag root = GenesisDataHolder.get(entity);
         if (!root.contains(NBT_KEY)) {
             root.put(NBT_KEY, new CompoundTag());
         }

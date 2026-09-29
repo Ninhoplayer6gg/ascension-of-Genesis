@@ -1,5 +1,6 @@
 package com.genesisdynamics.projectgenesis.power.ability;
 
+import com.genesisdynamics.projectgenesis.player.GenesisDataHolder;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvents;
@@ -41,8 +42,8 @@ public class HeatBurstAbility extends GenesisAbility {
         if (!tryPayCost(entity, entry)) {
             return;
         }
-        float heat = entity.getPersistentData().getFloat("GenesisHeliosHeat");
-        entity.getPersistentData().putFloat("GenesisHeliosHeat", heat + 25f);
+        float heat = GenesisDataHolder.get(entity).getFloat("GenesisHeliosHeat");
+        GenesisDataHolder.get(entity).putFloat("GenesisHeliosHeat", heat + 25f);
 
         float radius = entry.getProperty(RADIUS);
         AABB box = entity.getBoundingBox().inflate(radius);
